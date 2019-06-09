@@ -1,28 +1,28 @@
 package app.student;
 
 public class Request {
-    private int uuid;
-    private int studentId;
-    private int universityId;
-    private Status status;
+    private String uuid;
+    private String studentId;
+    private String universityId;
+    private Status status = Status.CREATED;
 
-    public void setStudentId(int studentId) {
+    public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 
-    public int getUuid() {
+    public String getUuid() {
         return uuid;
     }
 
-    public void setUuid(int uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 
-    public int getUniversityId() {
+    public String getUniversityId() {
         return universityId;
     }
 
-    public void setUniversityId(int universityId) {
+    public void setUniversityId(String universityId) {
         this.universityId = universityId;
     }
 
@@ -32,5 +32,9 @@ public class Request {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public String getStudentId() {
+        return studentId;
     }
 }
